@@ -87,8 +87,8 @@ struct SpircTaskConfig {
 const CONTEXT_TRACKS_HISTORY: usize = 10;
 const CONTEXT_FETCH_THRESHOLD: u32 = 5;
 
-const VOLUME_STEPS: i64 = 64;
-const VOLUME_STEP_SIZE: u16 = 1024; // (u16::MAX + 1) / VOLUME_STEPS
+const VOLUME_STEPS: i64 = 16;
+const VOLUME_STEP_SIZE: u16 = 4096; // (u16::MAX + 1) / VOLUME_STEPS
 
 pub struct Spirc {
     commands: mpsc::UnboundedSender<SpircCommand>,
